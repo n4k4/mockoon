@@ -28,6 +28,12 @@
     "dummy-json": "2.0.0",
     "mime-types": "2.1.18",
     "semver": "5.5.0",
-    "uuid": "3.2.1"
-  }
+    "uuid": "3.2.1",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
